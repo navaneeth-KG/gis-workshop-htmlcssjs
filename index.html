@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML, CSS, and JavaScript</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        background-color: #f4f4f9;
+        color: #333;
+        margin: 0;
+        padding: 20px;
+      }
+      h1 {
+        color: #2c3e50;
+      }
+      p {
+        font-size: 1.2em;
+      }
+      ul {
+        padding-left: 20px;
+      }
+      li {
+        margin-bottom: 10px;
+      }
+      button {
+        background-color: #2c3e50;
+        color: #fff;
+        border: none;
+        padding: 10px 20px;
+        cursor: pointer;
+        margin-top: 20px;
+      }
+      button:hover {
+        background-color: #34495e;
+      }
+      #message {
+        color: green;
+        font-weight: bold;
+        margin-top: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Welcome!</h1>
+    <p>
+      This is a simple webpage created with HTML only. It contains basic content
+      but no styling or interactivity.
+    </p>
+    <ul>
+      <li>HTML structures the content on the web.</li>
+      <li>CSS makes it visually appealing.</li>
+      <li>JavaScript adds interactivity.</li>
+    </ul>
+    <button onclick="displayMessage()">Click Me</button>
+    <p id="message"></p>
+
+    <script>
+      function displayMessage() {
+        document.getElementById('message').textContent =
+          'You clicked the button! JavaScript is awesome!';
+      }
+    </script>
+  </body>
+</html>
